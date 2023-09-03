@@ -1,8 +1,8 @@
 kernel=%%KERNEL%%
 ramdisk=%%RAMDISK%%
-page_size=4096
-kernel_size=14309960
-ramdisk_size=699687
+page_size=2048
+kernel_size=%%KERNEL_SIZE%%
+ramdisk_size=%%RAMDISK_SIZE%%
 base_addr=0x80000000
 kernel_offset=0x00008000
 ramdisk_offset=0x01000000
