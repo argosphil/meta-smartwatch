@@ -11,9 +11,6 @@ COMPATIBLE_MACHINE = "rubyfish"
 SRC_URI = " git://github.com/mobvoi/mobvoi-ticwatch-kernel;branch=mobvoi-android-msm-rover-4.9;protocol=https \
     file://defconfig \
     file://img_info \
-    file://0002-mmc-Fix-embedded_sdio_data-duplicate-definition.patch \
-    file://0003-video-fbdev-msm-Provide-mdss_dsi_switch_page.patch \
-    file://0004-usb-hcd-Handle-when-host-mode-isn-t-available.patch \
     file://0005-initramfs-Don-t-skip-initramfs.patch \
 " 
 
