@@ -12,6 +12,9 @@ SRC_URI = " git://github.com/mobvoi/mobvoi-ticwatch-kernel;branch=mobvoi-android
     file://defconfig \
     file://img_info \
     file://0001-Makefile-don-t-make-CC-be-a-python-wrapper.patch \
+    file://0001-kgsl_events.c-fix-include.patch \
+    file://0002-remove-tracepoints.patch \
+    file://0003-remove-tracepoints.patch \
     file://0005-initramfs-Don-t-skip-initramfs.patch \
 " 
 
