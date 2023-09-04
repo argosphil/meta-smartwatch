@@ -1,0 +1,24 @@
+So I gave in and got one of those devices, since it seems a feasible port and I'd like to do one of those.
+
+Notes so far:
+
+* USB connection
+** dismantling a second USB cable and holding in place the bare wires with the charger cable's magnets works, kind of (it's more stable than `hoki`'s USB connection, at least)
+* Fastboot
+** unlocking the bootloader works
+** fastboot boot doesn't work
+** fastboot provides an immutable DTB to the Linux kernel. This is independent of the fastboot image.
+* TWRP
+** TWRP works (fastboot flash recovery twrp.img), lets you get a backup
+* stock kernel
+** it's a 32-bit kernel
+** /proc/config.gz is available and almost works. The defconfig doesn't.
+* EDL
+** after a kernel crash, the device will show up as USB device 05c6/900e
+** when in 900e mode, you can run edl [link] without any arguments, and get a complete RAM dump (in two files, DDRCS0.BIN and DDRCS1.bin). In particular, this lets you read printk messages at the time of the crash!
+** in 900e mode, the battery doesn't charge so leaving the watch in it will lead to a low-power situation.
+** a successful read of the memory dump will trigger a reboot
+** BEWARE: memory contents are not reset by a two-button "reboot"
+* DTB handling
+** we append our own DTB since the fastboot-provided one contains typos.
+** this requires CONFIG_ARM_APPENDED_DTB=y
