@@ -1601,7 +1601,7 @@
 					};
 
 					mux {
-						function = "gpio133";
+						function = "gpio";
 						pins = "gpio133";
 					};
 				};
