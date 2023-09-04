@@ -5774,13 +5774,6 @@
 			};
 		};
 
-		qcom,mdss_wb_panel {
-			compatible = "qcom,mdss_wb";
-			qcom,mdss_pan_res = <0x280 0x280>;
-			qcom,mdss_pan_bpp = <0x18>;
-			qcom,mdss-fb-map = <0x6c>;
-		};
-
 		qcom,mdss_rotator {
 			compatible = "qcom,mdss_rotator";
 			qcom,mdss-wb-count = <0x01>;
