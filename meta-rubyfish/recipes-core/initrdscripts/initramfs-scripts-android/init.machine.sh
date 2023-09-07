@@ -20,8 +20,8 @@ if [ ! -e $BOOT_DIR/etc/asteroid/machine.conf ] ; then
     # Correct properties as /system/ may not exist.
     serial="$(cat /proc/cmdline | sed 's/.*androidboot.serialno=//' | sed 's/ .*//')"
     echo $serial > /sys/kernel/config/usb_gadget/g1/strings/0x409/serialnumber
-    echo Fossil > /sys/kernel/config/usb_gadget/g1/strings/0x409/manufacturer
-    echo Fossil Gen 6 > /sys/kernel/config/usb_gadget/g1/strings/0x409/product
+    echo Mobvoi > /sys/kernel/config/usb_gadget/g1/strings/0x409/manufacturer
+    echo TicWatch Pro 3 > /sys/kernel/config/usb_gadget/g1/strings/0x409/product
 
     /usr/bin/adbd
 fi
