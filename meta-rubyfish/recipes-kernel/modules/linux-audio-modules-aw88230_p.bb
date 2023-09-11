@@ -6,7 +6,7 @@ COMPATIBLE_MACHINE = "rubyfish"
 inherit module kernel-module-split
 
 SRC_URI = " git://github.com/awinic-driver/aw88230;branch=main;protocol=https \
-        file://0001-Make-warnings-non-fatal.patch"
+        file://0001-add-Makefile.patch"
 SRCREV = "e14c37c611dfd9f31436287805fe6386c112b1b8"
 LINUX_VERSION ?= "4.9"
 PV = "${LINUX_VERSION}+pie"
