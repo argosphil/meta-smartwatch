@@ -6,6 +6,9 @@ BOOT_DIR=$1
 mkdir -m 0777 $BOOT_DIR/androidroot
 mount -t auto -o ro /dev/mmcblk0p29 $BOOT_DIR/androidroot
 
+# Allow Android binaries to load libraries from /usr/libexec/ (for example /usr/libexec/hal-droid/system/lib/libselinux_stubs.so)
+mount --bind /ld.config.28.txt $BOOT_DIR/androidroot/system/etc/ld.config.28.txt
+
 # Make the 'system' folder available as the system partition to the rootfs.
 ln -s /androidroot/system/ $BOOT_DIR/system
 
