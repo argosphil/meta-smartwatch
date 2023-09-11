@@ -1,5 +1,14 @@
 So I gave in and got one of those devices, since it seems a feasible port and I'd like to do one of those.
 
+* Status
+- boots to initrd
+** OK
+- MMC
+- frame buffer
+** crashes
+- WLAN
+** broken
+- reboot: powers down the watch. msm_do_powerdown() seems to reset it though.
 Notes so far:
 
 * USB connection
