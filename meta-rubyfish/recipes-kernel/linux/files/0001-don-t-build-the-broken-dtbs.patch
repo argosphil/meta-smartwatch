@@ -19,7 +19,7 @@ index c47cf50b1f09..6193192f3b78 100644
 -dtb-$(CONFIG_ARCH_SDM429) += rubyfish.dtb
 +# dtb-$(CONFIG_ARCH_SDM429) += rover.dtb
 +# dtb-$(CONFIG_ARCH_SDM429) += rubyfish.dtb
-+dtb-$(CONFIG_ARCH_SDM429) += rubyfish-usable.dtb
++dtb-$(CONFIG_ARCH_SDM429) += rover-usable.dtb rubyfish-usable.dtb
  endif
  always		:= $(dtb-y)
  subdir-y	:= $(dts-dirs)
