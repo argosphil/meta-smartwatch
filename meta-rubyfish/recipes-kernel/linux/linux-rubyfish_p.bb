@@ -17,6 +17,7 @@ SRC_URI = " git://github.com/mobvoi/mobvoi-ticwatch-kernel;branch=mobvoi-android
     file://0003-remove-tracepoints.patch \
     file://0005-initramfs-Don-t-skip-initramfs.patch \
     file://0001-dts-add-rubyfish-usable.dts.patch \
+    file://0001-dts-add-rover-usable-device-tree.patch \
     file://0001-don-t-build-the-broken-dtbs.patch \
     file://0001-pinconf-generic-work-around-buggy-device-tree.patch \
 \
