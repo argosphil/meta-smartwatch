@@ -6,7 +6,8 @@ COMPATIBLE_MACHINE = "rubyfish"
 inherit module kernel-module-split
 
 SRC_URI = " git://android.googlesource.com/kernel/msm-extra;branch=android-msm-beluga-4.9-pie-wear-mr2;protocol=https \
-        file://0001-Make-warnings-non-fatal.patch"
+        file://0001-Make-warnings-non-fatal.patch \
+        file://0001-switch-default-chipset-to-apq8053.patch"
 SRCREV = "9c56e30ea127e2c88188db5e2c1637e346ae75a3"
 LINUX_VERSION ?= "4.9"
 PV = "${LINUX_VERSION}+pie"
