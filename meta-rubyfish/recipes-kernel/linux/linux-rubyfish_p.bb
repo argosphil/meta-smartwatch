@@ -2,7 +2,7 @@ require recipes-kernel/linux/linux.inc
 inherit gettext
 
 SECTION = "kernel"
-SUMMARY = "Android kernel for the Tic Watch Pro 3 GPS platform"
+SUMMARY = "Android kernel for the TicWatch Pro 3 GPS platform"
 HOMEPAGE = "https://github.com/mobvoi/"
 LICENSE = "GPL-2.0-only"
 LIC_FILES_CHKSUM = "file://COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
